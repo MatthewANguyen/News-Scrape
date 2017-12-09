@@ -1,0 +1,19 @@
+<div>
+    <div class="row">
+        <div class="col s3"></div>
+        <a href="/scrape" class="card z-depth-3 center-align col s6">Get Articles</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col s2"></div>
+    <div class ="col s8 left-align">
+        {{#each article}}
+            <div class="card-panel">
+                <h4>{{this.title}}</h4>
+                {{!-- goes to article.handlebars --}}
+                <a href = "/readArticle/{{this._id}}" class="waves-effect waves-light btn blue lighten-1" id="btnSignUp">Read Article</a>
+            </div>
+        {{/each}}
+    </div>
+</div>

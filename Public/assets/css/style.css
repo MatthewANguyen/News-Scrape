@@ -1,0 +1,42 @@
+body{
+    background-size: 600px;
+    font-size: 16px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+h4{
+    font-size: 20px;
+}
+
+/*.articleBody{*/
+    /*height: 200px;*/
+    /*font-size: 20px;*/
+    /*overflow-y: scroll;*/
+    /*line-height: 150%;*/
+/*}*/
+
+#nameComment{
+    font-weight: bold;
+    background: #1e87ec;
+    color: white;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #1e87ec;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #1e87ec;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #1e87ec;
+}
