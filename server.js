@@ -19,7 +19,7 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 //connecting to MongoDB
-var MONGODB_URI = process.env.MONGODB_URI || 'mongodb://user1:user1@ds133816.mlab.com:33816/mongo-news';
+var MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/mongo_news';
 
 mongoose.connect(MONGODB_URI, {
     useMongoClient: true
